@@ -82,25 +82,6 @@ Download the latest release from the [**Releases**](../../releases/latest) page:
 
 ---
 
-## 🛠️ Build from Source
-
-```bash
-# Clone the repository
-git clone https://github.com/antigravity-studios/cleanora.git
-cd cleanora
-
-# Install dependencies
-npm install
-
-# Run in development
-npm start
-
-# Build for distribution
-npm run build
-```
-
----
-
 ## 🎨 Tech Stack
 
 - **[Electron](https://electronjs.org)** - Cross-platform desktop framework
