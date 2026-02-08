@@ -1,0 +1,39 @@
+directories:
+  output: dist
+  buildResources: assets
+appId: com.antigravity.cleanora
+productName: Cleanora
+copyright: Copyright © 2026 Antigravity Studios
+files:
+  - filter:
+      - src/**/*
+      - preload.js
+      - assets/**/*
+      - '!node_modules/**/*'
+      - node_modules/**/*
+extraResources:
+  - from: src/scripts
+    to: scripts
+    filter:
+      - '**/*'
+asar: true
+asarUnpack:
+  - src/scripts/**/*
+win:
+  target:
+    - nsis
+    - portable
+  icon: assets/icon.ico
+  requestedExecutionLevel: requireAdministrator
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  installerIcon: assets/icon.ico
+  uninstallerIcon: assets/icon.ico
+  installerHeaderIcon: assets/icon.ico
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Cleanora
+portable:
+  artifactName: Cleanora-Portable-${version}.exe
+electronVersion: 28.3.3
